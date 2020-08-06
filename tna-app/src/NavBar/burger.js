@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import styled from 'styled-components'
 
-class Events extends Component {
+class burger extends Component {
     render() {
         return (
             <div>
-                this is event page
+                
             </div>
         );
     }
 }
 
-export default Events;
+export default burger;

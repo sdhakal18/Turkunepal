@@ -1,53 +1,38 @@
-.App{
+.App {
   text-align: justify;
 }
 
-.navbar{
-  display: flex;
-  justify-content: space-around;
-  height: 100px;
-   background: rgb(70, 70, 73);
-   color: white;
-   text-emphasis-color:yellow;
-   text-decoration: none;
-  
-   
-  
-}
-
-.nav-link{
+.navbar {
   width: 100%;
   display: flex;
+
+ 
+  height: 100px;
+  background: rgb(70, 70, 73);
+}
+
+.nav-link {
+  background-color: #0d2538;
+  flex-flow: column nowrap;
+  width: 300px;
+  position: fixed;
   justify-content: space-around;
-  align-items: center;
   list-style: none;
   color: yellow;
-  text-decoration: none;
+  top: -15px;
+  right: 0;
+  height: 50vh;
   
 }
-li{
+li {
   text-decoration-line: none;
   color: yellow;
+  font-size: xx-large;
+  padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{/*}
+ {
+  /*}
 .App {
   width: 60%;
   display: flex;
@@ -224,4 +209,5 @@ ul li a:hover {
   background-color: red;
   color: yellow;
 }
-*/}
+*/
+}
