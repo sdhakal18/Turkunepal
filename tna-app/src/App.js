@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import main_bg from './images/main_bg.png'
+import'./App.css';
+import LeftContainer from './LeftContainer';
+import RightContainer from './RightContainer';
 
 function App() {
   return (
-    <div className="bgimg" >
-      
+    <div class="App">
+      <LeftContainer />
+      <RightContainer />
     </div>
   );
 }
