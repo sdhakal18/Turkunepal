@@ -7,10 +7,9 @@ export default function LeftContainer() {
   return (
     <div className="LeftContainer">
       <div className="logo">
-          <h1>TNA</h1>
-          <img src={require('./images/logo_main.png')} />
-        
-         </div>
+      
+        <img className="bglogo"src={require('./images/logo_main.png')} /> 
+      </div>
 
     </div>
   
