@@ -25,38 +25,88 @@
   
 
   }
-.bglogo {
+.containerLogo {
   background-image: url("./images/logo_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px;
-  margin-left: 30px;
+  margin-left: 50px;
   width: 100px;
   height: auto;
 }
+
+
+
+
+
 
 .containerTNA {
   position: relative;
   text-align: center;
   color: white;
   margin-top: -200px;
-  margin-left: 80px;
+  margin-left: 100px;
 }
+.centeredTNA {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  right:40%;
+  transform: translate(-50%, -50%);
+}  
+
+
+
+
+
 .containerGTK {
   position: relative;
   text-align: center;
   color: white;
   float:left;
   margin-top: -210px;
-  margin-left: 0px;
+  margin-left: 20px;
   
 }
+.centeredGTN {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  right:40%;
+  transform: translate(-50%, -50%);
+} 
+
+
+
+
 .containerEvents {
   position: relative;
   text-align: center;
   color: white;
-  margin-top: 0px;
-  margin-left: 80px;
+  float:left;
+  margin-top: -100px;
+  margin-left: -110px;
+  margin-right: 0px;
+  
+}
+.centeredEvents {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  right:40%;
+  transform: translate(-50%, -50%);
+} 
+
+
+
+
+
+/*.containerEvents {
+  position: relative;
+  text-align: center;
+  color: aquamarine;
+  margin-top: -200px;
+  margin-left: 100px;
 }
 .containerGallery {
   position: relative;
@@ -72,11 +122,17 @@
   margin-top: 0px;
   margin-left: 80px;
 }
+*/
 
+    /*
 
-.centeredTNA {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.centeredEvents{
+    position: absolute;
+    background-image: url(./images/menu_bg.png);
+    background-size: cover;
+    left: 30%;
+    bottom:-10%;
+    transform: translate(-50%, -50%);
 }
+*/
+
