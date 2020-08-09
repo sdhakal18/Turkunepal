@@ -9,20 +9,20 @@ export default function LeftContainer() {
     <div className="LeftContainer">
      
       <div className="logo">
-        <img className="bglogo"src={require('./images/logo_main.png')} /> 
+        <img className="containerLogo"src={require('./images/logo_main.png')} /> 
       </div>
       <div>
-          <div class="containerTNA">
+          <div className="containerTNA">
           <img src={require('./images/bgTNA.png')} alt="logo of TNA" ></img>
-          <h1 class="centeredTNA">Turku Nepal Association Ry</h1>
+          <h1 className="centeredTNA">Turku Nepal Association Ry</h1>
           </div>
           <div class="containerGTK">
           <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-          <h1 class="centeredTNA">Good to know</h1>
+          <h1 class="centeredGTN">Good to know</h1>
           </div>
-          <div class="containerEvents">
+          <div className="containerEvents">
           <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-          <h1 class="centeredTNA">Events</h1>
+          <h1 class="centeredEvents">Events</h1>
           </div>
           <div class="containerGallery">
           <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
