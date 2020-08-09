@@ -22,6 +22,7 @@
 .logo{
     position: relative;
     overflow: hidden;
+  
 
   }
 .bglogo {
@@ -29,7 +30,53 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px;
-  margin: 70px;
+  margin-left: 30px;
   width: 100px;
-  height: 100px;
+  height: auto;
+}
+
+.containerTNA {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: -200px;
+  margin-left: 80px;
+}
+.containerGTK {
+  position: relative;
+  text-align: center;
+  color: white;
+  float:left;
+  margin-top: -210px;
+  margin-left: 0px;
+  
+}
+.containerEvents {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  margin-left: 80px;
+}
+.containerGallery {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  margin-left: 80px;
+}
+.containerContact {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  margin-left: 80px;
+}
+
+
+.centeredTNA {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
