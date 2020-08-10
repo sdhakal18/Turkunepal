@@ -26,11 +26,15 @@ export default function LeftContainer() {
           </div>
           <div class="containerGallery">
           <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-          <h1 class="centeredTNA">Gallery</h1>
+          <h1 class="centeredGallery">Gallery</h1>
           </div>
-          <div class="containercontact">
+          <div class="containerContact">
           <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-          <h1 class="centeredTNA">Contact US</h1>
+          <h1 class="centeredContact">Contact US</h1>
+          </div>
+          <div class="containerMembers">
+          <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
+          <h1 class="centeredMembers">Members</h1>
           </div>
 
       </div>

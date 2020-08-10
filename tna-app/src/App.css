@@ -1,14 +1,16 @@
 .App {
   width: 100%;
   height: 100%;
+  font-size: 20px;
   background-image: url(./images/main_bg.png); 
   background-size:cover;
   
 }
 .LeftContainer{
-  width:40%;
-  height: auto;
+  width:50%;
+  height: 100%;
   float:left;
+
   
 }
 
@@ -44,8 +46,9 @@
   position: relative;
   text-align: center;
   color: white;
-  margin-top: -200px;
+  margin-top: -210px;
   margin-left: 100px;
+  overflow: hidden;
 }
 .centeredTNA {
   position: absolute;
@@ -53,6 +56,7 @@
   left: 50%;
   right:40%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }  
 
 
@@ -101,38 +105,67 @@
 
 
 
-/*.containerEvents {
-  position: relative;
-  text-align: center;
-  color: aquamarine;
-  margin-top: -200px;
-  margin-left: 100px;
-}
+
 .containerGallery {
-  position: relative;
+  position: absolute;
   text-align: center;
   color: white;
-  margin-top: 0px;
-  margin-left: 80px;
+  margin-left: 2%;
+  overflow: hidden;
 }
+
+.centeredGallery {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+
+
 .containerContact {
   position: relative;
   text-align: center;
   color: white;
-  margin-top: 0px;
-  margin-left: 80px;
+  margin-left: -15%;
+  margin-top: 0%;
+  
 }
-*/
 
-    /*
+.centeredContact {
+  position: absolute;
+  font-size: 20px;
+  text-decoration-color: aquamarine;
+  top: 760%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
 
-.centeredEvents{
-    position: absolute;
-    background-image: url(./images/menu_bg.png);
-    background-size: cover;
-    left: 30%;
-    bottom:-10%;
-    transform: translate(-50%, -50%);
+
+.containerMembers {
+  position: absolute;
+  text-align: center;
+  color: white;
+  padding-left: 20%;
+  margin-left:-3%;
+  margin-top: -25%;
+
+
+  display: grid;
+  grid:
+  'myArea myArea . . .'
+  'myArea myArea . . .';
+  grid-gap: 10px;
+  background-color: #2196F3
+  
 }
-*/
 
+
+
+.centeredMembers {
+  position: absolute;
+  font-size: 20px;
+  text-decoration-color: aquamarine;
+  top: 40%;
+  left:78%;
+  transform: translate(-50%, -50%);
+} 
