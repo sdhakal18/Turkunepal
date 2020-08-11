@@ -11,7 +11,7 @@ export default function LeftContainer() {
       <div className="logo">
         <img className="containerLogo"src={require('./images/logo_main.png')} /> 
       </div>
-      <div>
+      <div className="menuGrid">
           <div className="containerTNA">
           <img src={require('./images/bgTNA.png')} alt="logo of TNA" ></img>
           <h1 className="centeredTNA">Turku Nepal Association Ry</h1>
