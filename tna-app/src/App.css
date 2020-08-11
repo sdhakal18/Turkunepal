@@ -31,8 +31,9 @@
   background-image: url("./images/logo_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px;
-  margin-left: 50px;
+  padding: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
   width: 100px;
   height: auto;
 }
@@ -46,17 +47,17 @@
   position: relative;
   text-align: center;
   color: white;
-  margin-top: -210px;
-  margin-left: 100px;
+  margin-top: -30%;
+  margin-right: -10%;
   overflow: hidden;
 }
 .centeredTNA {
   position: absolute;
-  top: 45%;
-  left: 50%;
-  right:40%;
+  margin-left: 50%;
+  margin-top: -28%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  text-align: center;
 }  
 
 
@@ -64,19 +65,19 @@
 
 
 .containerGTK {
-  position: relative;
+  position: absolute;
   text-align: center;
   color: white;
   float:left;
-  margin-top: -210px;
-  margin-left: 20px;
+  margin-top: -15.5%;
+  margin-left: 6%;
   
 }
 .centeredGTN {
   position: absolute;
-  top: 35%;
-  left: 40%;
-  right:40%;
+  top: 40%;
+  font-size: 20px;
+  left: 50%;
   transform: translate(-50%, -50%);
 } 
 
@@ -84,24 +85,21 @@
 
 
 .containerEvents {
-  position: relative;
+  position: absolute;
   text-align: center;
   color: white;
   float:left;
-  margin-top: -100px;
-  margin-left: -110px;
-  margin-right: 0px;
+  margin-top: -8.5%;
+  margin-left: 12.9%;
   
 }
 .centeredEvents {
   position: absolute;
+  font-size: 20px;
   top: 40%;
-  left: 40%;
-  right:40%;
+  left: 50%;
   transform: translate(-50%, -50%);
 } 
-
-
 
 
 
@@ -110,32 +108,33 @@
   position: absolute;
   text-align: center;
   color: white;
-  margin-left: 2%;
+  margin-left: 6%;
+  margin-top: -1.5%;
   overflow: hidden;
 }
 
 .centeredGallery {
+  font-size: 20px;
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 } 
 
 
 .containerContact {
-  position: relative;
+  position: absolute;
   text-align: center;
   color: white;
-  margin-left: -15%;
-  margin-top: 0%;
+  margin-top: 5.5%;
+  margin-left: 12.9%;
   
 }
 
 .centeredContact {
   position: absolute;
   font-size: 20px;
-  text-decoration-color: aquamarine;
-  top: 760%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 } 
@@ -144,19 +143,9 @@
 .containerMembers {
   position: absolute;
   text-align: center;
-  color: white;
-  padding-left: 20%;
-  margin-left:-3%;
-  margin-top: -25%;
-
-
-  display: grid;
-  grid:
-  'myArea myArea . . .'
-  'myArea myArea . . .';
-  grid-gap: 10px;
-  background-color: #2196F3
-  
+  color: white; 
+  margin-top: -1.5%;
+  margin-left: 20%;
 }
 
 
@@ -164,8 +153,15 @@
 .centeredMembers {
   position: absolute;
   font-size: 20px;
-  text-decoration-color: aquamarine;
+  text-align: center;
   top: 40%;
-  left:78%;
+  left:50%;
   transform: translate(-50%, -50%);
 } 
+
+
+
+
+h1:hover {
+font-style: italic;
+}
