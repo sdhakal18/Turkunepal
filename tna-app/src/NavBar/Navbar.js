@@ -1,39 +1,66 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Navlink } from "react-router-dom";
+import Contactus from "../pages/Contactus";
+import Events from "../pages/Events";
+import Gallery from "../pages/Gallery";
+import Goodtoknow from "../pages/Goodtoknow";
+import Members from "../pages/Members";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class Navbar extends Component {
-  
+  state = {
+    isOpen: false,
+  };
+  handleClick = () => {
+    this.setState({
+      isOpen: !this.state.isOpen,
+    });
+  };
   render() {
     return (
-      <nav className="navbar">
-        
-        <ul className="nav-link">
+      <Router>
+        <nav>
           
+          <div className="barButton" onClick={this.handleClick}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            </div>
 
-          <Link to="/Events">
-            <li>Events</li>
-          </Link>
+            <ul className= {this.state.isOpen ? "navLink" : "undefined"}>
+              <Link to="/Events">
+                <li>Events</li>
+              </Link>
 
-          <Link to="/Gallery">
-            <li>Gallery</li>
-          </Link>
+              <Link to="/Gallery">
+                <li>Gallery</li>
+              </Link>
 
-          <Link to="/Goodtoknow">
-            <li>Good to know</li>
-          </Link>
+              <Link to="/Goodtoknow">
+                <li>Good to know</li>
+              </Link>
 
-          <Link to="Members">
-            <li>Members</li>
-          </Link>
+              <Link to="Members">
+                <li>Members</li>
+              </Link>
 
-          <Link to="/Contactus">
-            <li>Contactus</li>
-          </Link>
+              <Link to="/Contactus">
+                <li>Contactus</li>
+              </Link>
+            </ul>
           
+        </nav>
 
-        </ul>
-        
-      </nav>
+        <Switch>
+          <Route path="/Gallery" component={Gallery} />
+          <Route path="/Goodtoknow" component={Goodtoknow} />
+          <Route path="/Members" component={Members} />
+          <Route path="/Contactus" component={Contactus} />
+          <Route path="/Events" component={Events} />
+        </Switch>
+      </Router>
     );
   }
 }
