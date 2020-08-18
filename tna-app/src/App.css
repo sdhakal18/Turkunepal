@@ -7,7 +7,7 @@
   
 }
 .LeftContainer{
-  width:50%;
+  width:40%;
   height: 100%;
   float:left;
 
@@ -15,9 +15,8 @@
 }
 
 .RightContainer{
-  width: 60%;
+  width: 50%;
   height: auto;
-  background-color: blue;
   float: right;
 
 }
@@ -28,14 +27,15 @@
 
   }
 .containerLogo {
+  position: relative;
   background-image: url("./images/logo_bg.png");
+  margin-top: 5%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10%;
-  margin-left: 10%;
-  margin-top: 10%;
-  width: 100px;
-  height: auto;
+  margin-left: 5%;
+  padding-bottom: 10%;
+  width: 5vw;
 }
 
 
@@ -47,22 +47,27 @@
   position: relative;
   text-align: center;
   color: white;
-  margin-top: -30%;
-  margin-right: -10%;
+  margin-top: -25%;
+  margin-left: 10%;
   overflow: hidden;
+  width:25vw;
 }
+
 .centeredTNA {
-  position: absolute;
-  margin-left: 50%;
-  margin-top: -28%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
+  position:absolute;
   text-align: center;
+  color: white;
+  margin-top: -17%;
+  margin-left: 4%;
+  font-size: 2.5vw;
+  overflow: hidden;
+  width:25vw;
+  
 }  
 
 
 
-
+/*
 
 .containerGTK {
   position: absolute;
@@ -158,10 +163,18 @@
   left:50%;
   transform: translate(-50%, -50%);
 } 
-
+*/
 
 
 
 h1:hover {
 font-style: italic;
 }
+
+
+/*-----------------       ----------------------------------*/
+
+
+
+
+

@@ -9,7 +9,7 @@ export default function RightContainer() {
   return (
     <div className="RightContainer"> 
       
-      <div><NavBar />  </div>
+      <div className="nav"><NavBar />  </div>
       <div><Container /></div>
       <div><Footer /></div>  
     </div>
