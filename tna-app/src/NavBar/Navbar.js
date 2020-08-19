@@ -1,65 +1,62 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navlink } from "react-router-dom";
-import Contactus from "../pages/Contactus";
-import Events from "../pages/Events";
-import Gallery from "../pages/Gallery";
-import Goodtoknow from "../pages/Goodtoknow";
-import Members from "../pages/Members";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Searchbutton from "../NavBar/Searchbutton";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
+
+import "../css/navbar.css";
+import SignInForm from "../LoginForms/SignInForm";
+import SignUpForm from "../LoginForms/SignUpForm";
+
+import Hamburger from "./Hamburger";
 
 class Navbar extends Component {
-  state = {
-    isOpen: false,
-  };
-  handleClick = () => {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  };
   render() {
     return (
       <Router>
-        <nav>
+        <div className="navInside">
+          <ul>
+            <div>
+            <li>
+                <Searchbutton />
+              </li>
+              <li>
+                <NavLink
+                  to="/sign-in"
+                  activeClassName="FormTitle__Link--Active"
+                  className="FormTitle__Link"
+                >
+                  Sign In
+                </NavLink>{" "}
+                <NavLink
+                  to="/sign-up"
+                  activeClassName="FormTitle__Link--Active"
+                  className="FormTitle__Link"
+                >
+                  Sign Up
+                </NavLink>
+              </li>
+              
+              
+            
+              
+            
           
-          <div className="barButton" onClick={this.handleClick}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
             </div>
 
-            <ul className= {this.state.isOpen ? "navLink" : "undefined"}>
-              <Link to="/Events">
-                <li>Events</li>
-              </Link>
-
-              <Link to="/Gallery">
-                <li>Gallery</li>
-              </Link>
-
-              <Link to="/Goodtoknow">
-                <li>Good to know</li>
-              </Link>
-
-              <Link to="Members">
-                <li>Members</li>
-              </Link>
-
-              <Link to="/Contactus">
-                <li>Contactus</li>
-              </Link>
-            </ul>
+            <div>
+              <Route exact path="/sign-up" component={SignUpForm}></Route>
+              <Route path="/sign-in" component={SignInForm}></Route>
+            </div>
+          </ul>
           
-        </nav>
-
-        <Switch>
-          <Route path="/Gallery" component={Gallery} />
-          <Route path="/Goodtoknow" component={Goodtoknow} />
-          <Route path="/Members" component={Members} />
-          <Route path="/Contactus" component={Contactus} />
-          <Route path="/Events" component={Events} />
-        </Switch>
+        </div>
+        <Hamburger />
       </Router>
     );
   }

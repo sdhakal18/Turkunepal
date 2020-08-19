@@ -6,63 +6,10 @@
 
 .App {
   width: 100%;
-  height: auto;
 }
 
-.LeftContainer {
-  width: 40%;
-  height: 700px;
-  background: red;
-  float: left;
-}
 
-.RightContainer {
-  width: 60%;
-  height: 700px;
-  background: blue;
-  float: right;
-}
-.barButton {
-  float: right;
-  position: relative;
-  z-index: 20;
-}
-
-.bar {
-  width: 30px;
-  margin: 3px;
-  height: 4px;
-  background-color: white;
-}
-ul {
-  height: 0px;
-  overflow: hidden;
-}
-a:link {
-  text-decoration: none;
-  
-}
-
-a:hover {
-  background-color: white;
-  color: yellow;
-}
-
-.navLink {
-  background-color: rgb(235, 46, 46);
-  flex-flow: column nowrap;
-  width: 200px;
-  position: fixed;
-
- 
-  right: 0px;
-  height: 30vh;
-  font-size: xx-large;
-  overflow: hidden;
-  border: 5px solid green;
-}
-
-/*}
+/*
 .App {
   width: 60%;
   display: flex;

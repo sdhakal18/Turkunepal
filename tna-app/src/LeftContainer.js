@@ -1,4 +1,5 @@
 import React from 'react'
+import "./css/leftcontainer.css";
 
 export default function LeftContainer() {
   return (

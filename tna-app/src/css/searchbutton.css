@@ -1,0 +1,14 @@
+.search{
+    font-size: 20px;
+    padding: 3px 5px;
+    
+    
+}
+.searchBtn{
+    font-size: 20px;
+    background: #0b7dda;
+    padding: 3px 5px;
+}
+.searchBtn:hover{
+    background: #0b7dda;
+}
