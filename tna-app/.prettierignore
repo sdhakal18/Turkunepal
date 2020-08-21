@@ -1,0 +1,6 @@
+# Dev tools
+.docker/
+.git/
+.idea
+.vscode
+**/*/node_modules
