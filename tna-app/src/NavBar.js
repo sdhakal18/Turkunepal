@@ -10,21 +10,18 @@ export default function NavBar() {
   return (
     <Router>
     <div className="navBar">
-        
-      <div className="dropDown">
-        <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-        <div class="dropdown-content">
-
-        <Link to="/">Home</Link>
-        <Link to="/events">Events</Link>
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/members">Members</Link>
-        <Link to="/contactUs">Contact US</Link>   
-
-        </div>
-        </div>
-    </div>
+      <div>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
+      </ul>
 
       <hr />
 
@@ -39,21 +36,16 @@ export default function NavBar() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/events">
-          <Events />
+        <Route path="/about">
+          <About />
         </Route>
-        <Route path="/gallery">
-          <Gallery />
-        </Route>
-        <Route path="/members">
-          <Members />
-        </Route>
-        <Route path="/contactus">
-          <ContactUs />
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
       </Switch>
     
       </div>
+    </div>
 
   </Router>
   );
@@ -65,40 +57,26 @@ export default function NavBar() {
 
 function Home() {
   return (
-    <div >
-      
+    <div>
+      <h2>Home</h2>
     </div>
   );
 }
 
-function Events() {
+function About() {
   return (
     <div>
-      <h2>Events</h2>
+      <h2>About</h2>
     </div>
   );
 }
 
-function Gallery() {
+function Dashboard() {
   return (
     <div>
-      <h2>Gallery</h2>
+      <h2>Dashboard</h2>
     </div>
   );
 }
 
-function ContactUs() {
-  return (
-    <div>
-      <h2>Contact Us</h2>
-    </div>
-  );
-}
 
-function Members() {
-  return (
-    <div>
-      <h2>Members</h2>
-    </div>
-  );
-}
