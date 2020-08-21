@@ -1,0 +1,121 @@
+@import '../../styles/variables.scss';
+
+.LeftContainer {
+  width: 40%;
+  height: 100%;
+  float: left;
+  .menuGrid {
+    .logo {
+      position: relative;
+      overflow: hidden;
+      .containerLogo {
+        position: fixed;
+        top: 20vw;
+        left: 40vw;
+      }
+      .containerTNA {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-top: -25%;
+        margin-left: 10%;
+        overflow: hidden;
+        width: 25vw;
+      }
+
+      .centeredTNA {
+        position: absolute;
+        text-align: center;
+        color: white;
+        margin-top: -17%;
+        margin-left: 4%;
+        font-size: 2.5vw;
+        overflow: hidden;
+        width: 25vw;
+      }
+
+      .containerGTK {
+        position: relative;
+        text-align: center;
+        color: white;
+        float: left;
+        margin-top: -36.5%;
+        margin-left: -6.5%;
+      }
+      .centeredGTN {
+        position: absolute;
+        top: 40%;
+        font-size: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .containerEvents {
+        position: absolute;
+        text-align: center;
+        color: white;
+        float: left;
+        margin-top: -9.2%;
+        margin-left: 3.7%;
+      }
+      .centeredEvents {
+        position: absolute;
+        font-size: 20px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .containerGallery {
+        position: relative;
+        text-align: center;
+        color: white;
+        float: left;
+        margin-top: -13%;
+        margin-left: -6.5%;
+      }
+
+      .centeredGallery {
+        font-size: 20px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .containerContact {
+        position: relative;
+        text-align: center;
+        color: white;
+        float: left;
+        margin-top: -1%;
+        margin-left: -20%;
+      }
+
+      .centeredContact {
+        position: absolute;
+        font-size: 20px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .containerMembers {
+        position: absolute;
+        text-align: center;
+        color: white;
+        margin-top: -4.75%;
+        margin-left: 9.75%;
+      }
+
+      .centeredMembers {
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
