@@ -15,65 +15,21 @@ import {Link, Route, Router} from 'react-router'
 export default function LeftContainer() {
   return (
     <div className="LeftContainer">
+        <div classname="logoName">
+        <div className="logo"><h1>Logo</h1></div>
+        <div className="name"><h1>Turku Nepal Association Ry</h1></div>
+      </div>
 
-      
-        
-<div className="menuGrid">
-        
-        <ul>
-        <li>
-            <div className="logo">
-            <img className="containerLogo"src={require('./images/logo_main.png')} />
-            </div>
-        </li>
-        
-        <li>  
-  
-            
-            <img className="containerTNA" src={require('./images/bgTNA.png')} alt="logo of TNA" ></img>
-            <h1 className="centeredTNA">Turku Nepal Association Ry</h1>
-            
-        </li>
-  
-        <li>
-            <div className="containerGTK">
-            <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-            <h1 className="centeredGTN">Good to know</h1>
-            </div>
-        </li>
+          <div className="Pages1">
+            <div className="gtk"><span>Good to know</span></div>
+            <div className="events"><span>Events</span></div>
+            <div className="members"><span>Members</span></div>
+          </div>
           
-        <li>
-            <div className="containerEvents">
-            <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-            <h1 className="centeredEvents">Events</h1>
-            </div>
-        </li>
-  
-        <li>
-            <div className="containerGallery">
-            <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-            <h1 class="centeredGallery">Gallery</h1>
-            </div>
-  
-            <div class="containerMembers">
-            <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-            <h1 className="centeredMembers">Members</h1>
-            
-            </div>
-        </li>
-  
-        <li>
-            <div className="containerContact">
-            <img src={require('./images/menu_bg.png')} alt="logo of TNA" ></img>
-            <h1 className="centeredContact">Contact US</h1>
-            </div>
-        </li>
-           
-        </ul>
-        
-        </div>
-
-      
+      <div className="pages2">
+            <div className="gallery"><span>Gallery</span></div>
+            <div className="contact"><span>Contact US</span></div>
+      </div>
     </div>  
 
     

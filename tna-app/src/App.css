@@ -18,295 +18,143 @@
   float: right;
 
 }
-/*
-.LeftContainer{
-  width:60vw;
-  height: 60vw;
-  padding-top: 5%;
-  padding-left: 2%;
-  display: grid;
-  grid-template:2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px;
-  grid-template-areas: 
- "  logo logo TNA TNA TNA TNA ."
- "  logo logo TNA TNA TNA TNA ."
- "  logo logo TNA TNA TNA TNA ."
- "   GTK GTK TNA TNA TNA TNA ."
- " GTK GTK TNA TNA TNA TNA. "
- "  GTK  GTK . . . .  ."
- " .  Events Events .  . . ."
- ". Events Events . . . . "
- ". Events Events . . . ."
- "  Gallery Gallery Members Members . . ."
- "  Gallery Gallery Members Members . . ."
- "  Gallery Gallery Members Members . . ."
- "  . contactus contactus . . . ."
- "  . contactus contactus  . . . ."
- "  . contactus contactus . . . ."
- 
-}
-
-.logo{
-  background-image: url(./images/logo_bg.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: logo;
-  margin-left: 5%;
-  overflow: visible;
-  margin-bottom: -15%;
-}
-
-.TNA{
-  background-image: url(./images/bgTNA.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: TNA;
- margin: -13% 5% -40% -27%;
- 
-  
-}
-
-.GTK{
-  background-image: url(./images/menu_bg.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: GTK;
-  margin-top: 15%;
-  margin-bottom: -30%;
-}
-
-.Events{
-  background-image: url(./images/menu_bg.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: Events; 
-  margin-top: -15%;
-  
-}
-
-.Gallery{
-  background-image: url(./images/menu_bg.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: Gallery;
-  margin-top: 15%;
-  margin-bottom: -30%;
-  
-}
-
-.Members{
-  background-image: url(./images/menu_bg.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: Members;
-}
-
-.contactus{
-  background-image: url(./images/menu_bg.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-area: contactus;
-}
-
-*/
-
 
 
 .LeftContainer{
-  position: absolute;
-  width:60vw;
-  height: 60vw;
-  padding-top: 5%;
-  padding-left: 2%;
+  width:40%;
+  height:auto;
+  float:left;
+  
 }
 
+/*--------------------CSS for LOGO block  And Name block------------------------------------------------*/
 
 
+.logoName{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
-
-
-
-
+/*------------------------------FOR LOGO--------------------*/
 .logo{
-    position: relative;
-    overflow: hidden;
-  
+  width:7.5em;
+  height:7.5em;
+  color:white;
+  background:radial-gradient(circle, #9f0909, #271212);;
+  align-content: center;
+  align-self: center;
+  transform:rotate(315deg);
+  margin-left: 10%;
+  margin-top: 10%;
+  padding:5px;
+}
+.logo h1{
+  display:flex;
+  transform:rotate(45deg);
+  margin-left:10%;
+  margin-top:40%;
+}
 
-  }
-.containerLogo {
-  position: relative;
-  background-image: url("./images/logo_bg.png");
-  margin-top: 0%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10%;
-  width: 1vw;
+
+/*-------------------------------------FOR NAME*/
+
+.name{
+  width:15em;
+  height: 15em;
+  margin-left: 30%;
+  margin-top:-10%;
+  padding: 5px;
+  flex-wrap: wrap;
+  background:radial-gradient(circle, #9f0909, #271212);;;
+  align-content: center;
+  align-self: center; 
+  transform:rotate(315deg);
+}
+
+.name h1{
+  display:flex;
+  transform:rotate(45deg);
+  margin-left:5%;
+  margin-top:30%;
+}
+
+/*----------------------------------------*/
+
+.pages1{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+/*--------------------- Good To Know-------------------------*/
+
+.gtk{
+  width:7.5em;
+  height:7.5em;
+  color:white;
+  background:radial-gradient(circle, #9f0909, #271212);;
+  align-content: center;
+  align-self: center;
+  transform:rotate(315deg);
+  margin-left: 10%;
+  margin-top: 10%;
+  padding:5px;
+}
+
+.gtk span{
+  display:flex;
+  transform:rotate(45deg);
+  margin-left:9%;
+  margin-top:45%;
+
+}
+
+
+
+.events{
+  width:7.5em;
+  height:7.5em;
+  color:white;
+  background:radial-gradient(circle, #9f0909, #271212);;
+  align-content: center;
+  align-self: center;
+  transform:rotate(315deg);
+  margin-left: 10%;
+  margin-top: 10%;
+  padding:5px;
+}
+
+.events span{
+  display:flex;
+  transform:rotate(45deg);
+  margin-left:9%;
+  margin-top:45%;
+
 }
 
 
 
 
-
-
-.containerTNA {
-  position: relative;
-  text-align: center;
-  color: white;
-  margin-top: -20%;
-  margin-left: 7%;
-  overflow: hidden;
-  width:25vw;
+.members{
+  width:7.5em;
+  height:7.5em;
+  color:white;
+  background:radial-gradient(circle, #9f0909, #271212);;
+  align-content: center;
+  align-self: center;
+  transform:rotate(315deg);
+  margin-left: 10%;
+  margin-top: 10%;
+  padding:5px;
 }
 
-.centeredTNA {
-  position:absolute;
-  text-align: center;
-  color: white;
-  top: 00%;
-  left:00%;
-  font-size: 2.5vw;
-  overflow: hidden;
-  width:15vw;
-  
-}  
+.members span{
+  display:flex;
+  transform:rotate(45deg);
+  margin-left:9%;
+  margin-top:45%;
 
-
-
-
-
-.containerGTK {
-  position: relative;
-  text-align: center;
-  color: white;
-  float:left;
-  margin-top: -14%;
-  margin-left: -9.5%;
-  width:20vw;
-  
 }
-.containerGTK h1 {
-  position: relative;
-  color: white;
-  margin-top: -40%;
-  font-size: 20px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-} 
-
-
-
-
-.containerEvents {
-  position: relative;
-  text-align: center;
-  color: white;
-  float:left;
-  margin-top: -2.25%;
-  margin-left: -27.75%;
-  width:25vw;
-  
-}
-.centeredEvents {
-  position: absolute;
-  font-size: 20px;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25vw;
-} 
-
-
-/*  
-
-.containerGallery {
-  position: relative;
-  text-align: center;
-  color: white;
-  float:left;
-  margin-top: -13%;
-  margin-left: -6.5%;
-  width:25vw;
-}
-
-.centeredGallery {
-  font-size: 20px;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} 
-
-
-.containerContact {
-  position: relative;
-  text-align: center;
-  color: white;
-  float:left;
-  margin-top: -1%;
-  margin-left: -20%;
-  
-}
-
-.centeredContact {
-  position: absolute;
-  font-size: 20px;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} 
-
-
-.containerMembers {
-  position: absolute;
-  text-align: center;
-  color: white; 
-  margin-top: -4.75%;
-  margin-left: 9.75%;
-}
-
-
-
-.centeredMembers {
-  position: absolute;
-  font-size: 20px;
-  text-align: center;
-  top: 40%;
-  left:50%;
-  transform: translate(-50%, -50%);
-} 
-
-
-
-
-h1:hover {
-font-style: italic;
-}
-
-*/
-/*-----------------       ----------------------------------*/
-
-
-
-
