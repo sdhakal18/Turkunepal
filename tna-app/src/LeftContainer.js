@@ -17,8 +17,8 @@ export default function LeftContainer() {
     <div className="LeftContainer">
         <div className="flexmenu">
                 <div classname="index">
-                <div className="logo">Logo</div>
-                <div className="name">Turku Nepal Association Ry</div>
+                <div className="logo"><img src= {logo_main} alt="pic" /></div>
+                <div className="name"><h1>Turku Nepal Association Ry</h1></div>
               </div>
 
                 <div className="Pages1">
