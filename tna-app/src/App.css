@@ -19,13 +19,12 @@
 
 
 .LeftContainer{
+  opacity: 0.9;
   display: flex;
   flex-flow: column;
   width:40%;
   height:auto;
-  float:none;
-  
-  
+  float:none;  
 }
 .flexmenu{
   display: flex;
@@ -48,7 +47,16 @@
   justify-content: center;
   text-align: center;
   color:white;
-  background:radial-gradient(circle, #9f0909, #271212);;
+  background:radial-gradient(circle, #9f0909, #271212);
+  margin-top:40%;
+  margin-left: 10%;
+}
+.logo img{
+  transform: rotate(45deg);
+  margin-left: 0%;
+  margin-top:0%;
+  height:75px;
+  width: 75px;
 }
 
 
@@ -57,12 +65,21 @@
 /*-------------------------------------FOR NAME*/
 
 .name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color:white;
   height: 200px;
   width: 200px;
   color: blanchedalmond;
   background:radial-gradient(circle, #9f0909, #271212);;;
- 
   
+}
+.name h1{
+  position: relative;
+  transform: rotate(45deg);
+  font-size: 30px;
 }
 
 
@@ -79,6 +96,10 @@
 
 
 .gtk{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width:100px;
   height:100px;
   margin-top:55%;
@@ -87,12 +108,18 @@
 }
 
 .gtk span{
-  display:flex;
+  position: relative;
+  transform: rotate(-45deg);
+  font-size: 20px;
 }
 
 
 
 .events{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width:100px;
   height:100px;
   margin-top:55%;
@@ -101,13 +128,19 @@
 }
 
 .events span{
-  display:flex;
+  position: relative;
+  transform: rotate(-45deg);
+  font-size: 20px;
 }
 
 
 
 
 .members{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width:100px;
   height:100px;
   margin-top:55%;
@@ -116,7 +149,9 @@
 }
 
 .members span{
-  display:flex;
+  position: relative;
+  transform: rotate(-45deg);
+  font-size: 20px;
 }
 
 .pages2{
@@ -128,6 +163,10 @@
 }
 
 .gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width:100px;
   height:100px;
   margin-top: 55%;
@@ -137,9 +176,15 @@
 
 .gallery span{
   display:flex;
+  flex-direction: row;
+  transform: rotate(-45deg);
 }
 
 .contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width:100px;
   height:100px;
   margin-top:55%;
@@ -149,5 +194,7 @@
 
 .contact span{
   display:flex;
+  flex-direction: row;
+  transform: rotate(-45deg);
 }
 
