@@ -1,0 +1,68 @@
+.navInside{
+  position: relative;
+  height: 50px;
+  
+  
+}
+
+.navInside ul {
+  list-style: none;
+  overflow: visible !important;
+}
+
+.navInside ul li{
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+  .signInBtn{
+    font-size: 20px;
+  }
+
+  .registerBtn{
+    font-size: 20px;
+  }
+
+  .signInBtn, .registerBtn{
+    padding: 3px 5px;
+  }
+  
+  .barButton {
+    float: right;
+    position: relative;
+    z-index: 20;
+  }
+  
+  .bar {
+    width: 30px;
+    margin: 3px;
+    height: 4px;
+    background-color: rgb(44, 44, 44);
+  }
+   ul {
+    height: 0px;
+    overflow: hidden;
+  }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+  
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: white;
+    color: yellow;
+  }
+  
+  .navLink {
+    background-color: rgb(22, 22, 22);
+    flex-flow: column nowrap;
+    width: 200px;
+    position: fixed;
+    right: 0px;
+    height: 30vh;
+    font-size: xx-large;
+    
+    
+  }
+  

@@ -1,7 +1,9 @@
 import React from 'react';
-import NavBar from './NavBar';
+import NavBar from './NavBar/Navbar'
 import Container from './Container';
 import Footer from './Footer';
+import  "./css/rightcontainer.css";
+
 
        
 //This div contains navbar, contents and footer
