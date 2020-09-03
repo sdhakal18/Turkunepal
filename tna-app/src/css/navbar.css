@@ -49,6 +49,7 @@
     float: right;
     position: relative;
     z-index: 20;
+    padding: 18px;
   }
   
   .bar {
@@ -64,7 +65,7 @@
   
   .nav ul li{
     overflow: hidden;
-    padding-top: 40px;
+    padding-top: 60px;
     font-size: 18px;
     padding-right:15px;
     padding-left:15px;

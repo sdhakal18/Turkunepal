@@ -3,3 +3,7 @@
     height: auto;
     float: right;
   }
+
+.main-container{
+  clear: both;
+}

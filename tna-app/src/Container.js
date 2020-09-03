@@ -6,10 +6,10 @@ import Gallery from "./pages/Gallery";
 import Goodtoknow from "./pages/Goodtoknow";
 import Members from "./pages/Members";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import "./css/rightcontainer.css";
 export default function Container() {
   return (
-    <div>
+    <div className="main-container">
       All the contents goes here
       <Router>
       <Switch>
