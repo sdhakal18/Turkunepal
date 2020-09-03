@@ -121,8 +121,8 @@ export default class SignInForm extends Component {
   };
 render() {
   return (
-  <div className="modal">
-    <div className="modal_content">
+  <div className="signInWindow">
+    <div className="widow_content">
     <span className="close" onClick={this.handleClick}>&times;    </span>
     <form
         onSubmit={this.handleSubmit}
@@ -160,7 +160,7 @@ render() {
 
         <div className="FormField">
           <button className="FormField__Button mr-20">Sign In</button>{" "}
-          <Link to="/sign-up" className="FormField__Link">
+          <Link to="/sign-in" className="FormField__Link">
             Create an account
           </Link>
         </div>
