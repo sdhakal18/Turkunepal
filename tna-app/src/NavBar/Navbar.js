@@ -10,8 +10,8 @@ import {
 } from 'react-router-dom';
 
 import '../css/navbar.css';
-import SignInForm from '../LoginForms/SignInForm';
-import SignUpForm from '../LoginForms/SignUpForm';
+import SignInForm from '../LoginForms/SignInForm';/* 
+import SignUpForm from '../LoginForms/SignUpForm'; */
 
 import Hamburger from './Hamburger';
 
@@ -32,28 +32,23 @@ class Navbar extends Component {
       seen: !this.state.seen,
     });
   };
-  handleClick = () => {
-    this.setState({
-      seen: !this.state.seen,
-    });
-  };
   render() {
     return (
-      <Router>
-        {/* <div>
+      /*<Router>
+         <div>
           <div className="btn" onClick={this.togglePop}>
             <button>Sign in?</button>
           </div>
           {this.state.seen ? <SignInForm toggle={this.togglePop} /> : null}
-        </div> */}
+        </div> 
         <div>
           <div className="btn" onClick={this.handleClick}>
             <button>New users?</button>
           </div>
           {this.state.seen ? <SignUpForm toggle={this.handleClick} /> : null}
         </div>
-      </Router>
-      /* <Router>
+      </Router>*/
+      <Router>
         <div className="navOutside">
           <div className="navInside">
             <ul>
@@ -61,15 +56,15 @@ class Navbar extends Component {
                 <Searchbutton />
               </li>
               <div>
-                <li className="{onClick={this.handleClick}">
-                  <NavLink
-                    to="/sign-in"
-                    activeClassName="FormTitle__Link--Active"
-                    className={this.state.isOpen ? 'SignInFrom' : 'undefined'}
-                    className="FormTitle__Link"
-                  >
-                    Sign In
-                  </NavLink>{' '}
+                <li>
+                  <div className="FormTitle__Link" onClick={this.togglePop}>
+                    <button> Sign In</button>
+                  </div>
+                  {this.state.seen ? (
+                    <SignInForm toggle={this.togglePop} />
+                  ) : null}
+                </li>
+                {/* <li>
                   <NavLink
                     to="/sign-up"
                     activeClassName="FormTitle__Link--Active"
@@ -78,17 +73,17 @@ class Navbar extends Component {
                     Sign Up
                   </NavLink>
                 </li>
-              </div>
+ */}              </div>
 
               <div>
-                <Route exact path="/sign-up" component={SignUpForm}></Route>
+                {/* <Route exact path="/sign-up" component={SignUpForm}></Route> */}
                 <Route path="/sign-in" component={SignInForm}></Route>
               </div>
             </ul>
           </div>
           <Hamburger />
         </div>
-      </Router> */
+      </Router>
     );
   }
 }

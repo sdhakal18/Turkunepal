@@ -9,7 +9,7 @@ export default function LeftContainer() {
   return (
     <div className="LeftContainer">
       <div className="flexmenu">
-        <div classname="index">
+        <div className="index">
           <div className="logo">
             <img src={logo_main} alt="main logo front" />
             <img src={tnalogo_yellow} className="img-top" alt="hover logo back" />
