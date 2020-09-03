@@ -1,22 +1,44 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.modal_content {
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
 
+.close {
+  color: Black;
+  float: right;
+  size: 24px;
+}
 
-
-
+.close:hover {
+  color: rgb(199, 33, 33);
+  cursor: pointer;
+}
+/**sagar work**/
 
 .FormCenter {
   margin-bottom: 50px;
   margin-left: 37%;
-  
-  
 }
-
+  
 .FormTitle {
   font-weight: 800;
   margin-bottom: 50px;
 }
 
 .FormTitle__Link {
-  color: white;
+  color: rgb(41, 41, 41);
   text-decoration: none;
   display: inline-block;
   font-size: 1.7em;
@@ -36,8 +58,6 @@
 .FormField {
   margin-bottom: 40px;
   width: 60%;
-  
-  
 }
 
 .FormField__Label {

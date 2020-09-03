@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import '../css/navbar.css';
-import Contactus from '../pages/Contactus';
-import Events from '../pages/Events';
-import Gallery from '../pages/Gallery';
-import Goodtoknow from '../pages/Goodtoknow';
-import Members from '../pages/Members';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "../css/navbar.css";
+import Contactus from "../pages/Contactus";
+import Events from "../pages/Events";
+import Gallery from "../pages/Gallery";
+import Goodtoknow from "../pages/Goodtoknow";
+import Members from "../pages/Members";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class Hamburger extends Component {
   state = {
@@ -20,7 +20,7 @@ class Hamburger extends Component {
   render() {
     return (
       <Router>
-        <div className="Nav">
+        <div className="nav">
           <div className="barButton" onClick={this.handleClick}>
             <div className="bar"></div>
             <div className="bar"></div>
@@ -28,7 +28,7 @@ class Hamburger extends Component {
             <div className="bar"></div>
           </div>
 
-          <ul className={this.state.isOpen ? 'navLink' : 'undefined'}>
+          <ul className={this.state.isOpen ? "navLink" : "navoff"}>
             <Link to="/Events">
               <li>Events</li>
             </Link>
@@ -51,13 +51,13 @@ class Hamburger extends Component {
           </ul>
         </div>
 
-        <Switch>
-          <Route path="/Gallery" component={Gallery} />
-          <Route path="/Goodtoknow" component={Goodtoknow} />
-          <Route path="/Members" component={Members} />
-          <Route path="/Contactus" component={Contactus} />
-          <Route path="/Events" component={Events} />
-        </Switch>
+        {/*  <Switch>
+              <Route path="/Gallery" component={Gallery} />
+              <Route path="/Goodtoknow" component={Goodtoknow} />
+              <Route path="/Members" component={Members} />
+              <Route path="/Contactus" component={Contactus} />
+              <Route path="/Events" component={Events} />
+            </Switch> */}
       </Router>
     );
   }

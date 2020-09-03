@@ -1,6 +1,5 @@
 .RightContainer {
-  width: 60%;
-  height: auto;
-  float: right;
-  display: flex;
-}
+    width: 60%;
+    height: auto;
+    float: right;
+  }
