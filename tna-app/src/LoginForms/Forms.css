@@ -18,13 +18,23 @@
 .close {
   color: Black;
   float: right;
-  size: 24px;
 }
 
 .close:hover {
   color: rgb(199, 33, 33);
   cursor: pointer;
 }
+
+.FormTitle__Link button{
+  padding: 8px 20px;
+  border: none;
+  background-color: #6b0f0f;
+  border-radius:5px;
+  color: white;
+  font-size: 16px;
+}
+
+
 /**sagar work**/
 
 .FormCenter {
@@ -138,3 +148,5 @@
   font-size: x-large;
   font-weight: 600;
 }
+
+/** Sagar  work ends here */

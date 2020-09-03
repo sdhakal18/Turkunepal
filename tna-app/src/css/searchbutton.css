@@ -10,6 +10,7 @@
 ::placeholder {
   color: -internal-light-dark(black, white);
   opacity: 1; /* Firefox */
+  font-size: 16px;
 }
 
 .searchButton input:focus {
@@ -17,7 +18,7 @@
 }
 
 .search {
-  font-size: 20px;
+  font-size:20px;
   padding: 5px 10px;
   color: #ec9d9d;
 }

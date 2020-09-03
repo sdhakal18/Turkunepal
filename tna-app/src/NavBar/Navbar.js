@@ -10,7 +10,7 @@ import {
 } from 'react-router-dom';
 
 import '../css/navbar.css';
-import SignInForm from '../LoginForms/SignInForm';/* 
+import SignInForm from '../LoginForms/SignInForm'; /* 
 import SignUpForm from '../LoginForms/SignUpForm'; */
 
 import Hamburger from './Hamburger';
@@ -55,16 +55,15 @@ class Navbar extends Component {
               <li>
                 <Searchbutton />
               </li>
-              <div>
-                <li>
-                  <div className="FormTitle__Link" onClick={this.togglePop}>
-                    <button> Sign In</button>
-                  </div>
-                  {this.state.seen ? (
-                    <SignInForm toggle={this.togglePop} />
-                  ) : null}
-                </li>
-                {/* <li>
+              <li>
+                <div className="FormTitle__Link" onClick={this.togglePop}>
+                  <button> Sign In</button>
+                </div>
+                {this.state.seen ? (
+                  <SignInForm toggle={this.togglePop} />
+                ) : null}
+              </li>
+              {/* <li>
                   <NavLink
                     to="/sign-up"
                     activeClassName="FormTitle__Link--Active"
@@ -73,13 +72,12 @@ class Navbar extends Component {
                     Sign Up
                   </NavLink>
                 </li>
- */}              </div>
-
-              <div>
-                {/* <Route exact path="/sign-up" component={SignUpForm}></Route> */}
-                <Route path="/sign-in" component={SignInForm}></Route>
-              </div>
+ */}{' '}
             </ul>
+            <div>
+              {/* <Route exact path="/sign-up" component={SignUpForm}></Route> */}
+              <Route path="/sign-in" component={SignInForm}></Route>
+            </div>
           </div>
           <Hamburger />
         </div>
