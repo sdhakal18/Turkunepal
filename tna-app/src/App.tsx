@@ -1,14 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import './styles/App.scss';
-
-import LeftContainer from './components/left-container/left-container';
-import RightContainer from './components/right-container/right-container';
 
 function App() {
   return (
     <div className="App">
-      <LeftContainer />
-      <RightContainer />
+      <div>Turku nepal associations ry</div>
+      <div>Hello workd</div>
     </div>
   );
 }
