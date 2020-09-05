@@ -1,0 +1,23 @@
+@import 'variables.scss';
+.Nav-card {
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  color: $light;
+  background: radial-gradient(circle, $secondary, $primary);
+  span {
+    padding: 2px;
+    font-size: 20px;
+    transform: rotate(-45deg);
+  }
+  img {
+    width: 50%;
+    transform: rotate(-45deg);
+  }
+}

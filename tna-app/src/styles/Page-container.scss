@@ -1,0 +1,40 @@
+@import 'variables.scss';
+.main-page {
+  width: 450px;
+  height: 300px;
+  display: flex;
+  .folded {
+    position: relative;
+    width: 150px;
+    height: 300px;
+    background: linear-gradient(to left, $primary, $secondary);
+  }
+  .folded:before {
+    content: ' ';
+    position: absolute;
+    border: 75px solid $light;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    top: 0;
+  }
+  .folded:after {
+    position: absolute;
+    content: ' ';
+    border: 75px solid transparent;
+    border-bottom-color: $light;
+    border-left-color: $light;
+    bottom: 0;
+  }
+  .page-container {
+    position: relative;
+    text-align: center;
+    color: $light;
+    height: 300px;
+    width: 300px;
+    background: radial-gradient(circle, $secondary, $primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
