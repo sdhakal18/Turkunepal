@@ -55,7 +55,7 @@ class HomePage extends Component<Props, State> {
               className="sign-in-btn"
               onClick={this.handleClick}
             >
-              Log in
+              Sign in
             </Button>
             <InputGroup className="search-input">
               <Input />
