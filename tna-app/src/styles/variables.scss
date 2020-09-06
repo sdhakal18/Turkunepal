@@ -1,3 +1,5 @@
+$follow-us-color: #aca4a4;
+
 // Bootstrap variables
 $primary: #271212 !default;
 $secondary: #9f0909 !default;
@@ -7,4 +9,6 @@ $warning: #ffc107 !default;
 $danger: #dc3545 !default;
 $light: #f8f9fa !default;
 $dark: #343a40 !default;
-$white: $light !default;
+
+$body-bg: $light;
+$body-color: $primary;

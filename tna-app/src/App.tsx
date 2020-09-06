@@ -25,12 +25,9 @@ class App extends Component<Props> {
     this.props.actions.fetchUserProfile();
   }
   public render() {
-    const { fetchingStatus, user } = this.props.userProfile;
+    const { fetchingStatus } = this.props.userProfile;
     return (
       <React.Fragment>
-        <div>
-          <h1>{'Logged in user:' + (user?.name || '')}</h1>
-        </div>
         {fetchingStatus === 'success' && (
           <Switch>
             <Route exact path={routes.login} component={LoginPage} />

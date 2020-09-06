@@ -5,7 +5,7 @@ import { loggedInUserMock, userProfileMock } from './mockData';
 import { apiEndpoints } from './urls';
 
 const injectMockApi = (axiosInstance: axios.AxiosInstance) => {
-  const axiosMock = new MockAdapter(axiosInstance, { delayResponse: 2000 });
+  const axiosMock = new MockAdapter(axiosInstance, { delayResponse: 500 });
 
   axiosMock
     .onGet(apiEndpoints.userProfile)

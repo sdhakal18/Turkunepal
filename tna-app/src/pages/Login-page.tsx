@@ -26,14 +26,12 @@ class LoginPage extends Component<Props, LoginCredentials> {
   constructor(props: Props) {
     super(props);
 
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {
       password: '',
       username: '',
     };
   }
-  private handleInputChange(event: React.ChangeEvent<HTMLInputElement>) {
+  private handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const target = event.target;
     const value = target.value;
     const name = target.name;
@@ -42,12 +40,13 @@ class LoginPage extends Component<Props, LoginCredentials> {
       ...this.state,
       [name]: value,
     });
-  }
+  };
 
-  private handleSubmit(e: React.FormEvent): void {
+  private handleSubmit = (e: React.FormEvent): void => {
     e.preventDefault();
     this.props.actions.loginUser(this.state);
-  }
+    this.props.history.push(routes.home);
+  };
 
   public render() {
     return (
