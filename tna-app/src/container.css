@@ -1,0 +1,42 @@
+.wrapper {
+  display: grid;
+  margin-top: 60px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  grid-template-areas:
+    "gtk gtk events events"
+    "gtk gtk events events"
+    "gtk gtk benefits benefits"
+    "gallery gallery benefits benefits"
+    "gallery gallery contact contact"
+    "gallery gallery contact contact";
+  grid-gap: 5px;
+}
+
+.rtgtk {
+  height: 200px;
+}
+.rtbenefits {
+  height: 134px;
+}
+
+.rtgallery {
+  height: 200px;
+}
+.rtevents {
+  height: 133px;
+  margin-top: 40px;
+}
+.rtcontact {
+  height: 133px;
+}
+
+.arrow-left {
+  float: left;
+  width: 100px;
+  height: 700px;
+  border-top: 400px solid transparent;
+  border-bottom: 300px solid transparent;
+  margin-left: -300px;
+  border-right: 300px solid blue;
+}

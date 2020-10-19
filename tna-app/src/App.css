@@ -1,200 +1,78 @@
-
 .App {
   width: 100%;
   height: 100%;
   font-size: 20px;
-  background-image: url(./images/main_bg.png); 
-  background-size:cover;
-  
+  background-size: cover;
 }
 
-
-.RightContainer{
-  display:flex;
-  width: 50%;
+.RightContainer {
+  position: relative;
+  display: none;
+  flex-direction: row;
+  width: 60%;
   height: auto;
   float: right;
-
 }
 
-
-.LeftContainer{
+.LeftContainer {
+  position: relative;
+  display: block;
   opacity: 0.9;
-  display: flex;
-  flex-flow: column;
-  width:40%;
-  height:auto;
-  float:none;  
+  margin-top: 40px;
+  width: 40%;
+  height: auto;
+  float: left;
+  z-index: 1;
+  border-right: 5px solid black;
 }
-.flexmenu{
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  margin-right: 10%;
-  margin-left: 5%;
-  transform:rotate(315deg);
+.hamburgerMenu {
+  display: none;
 }
-/*--------------------CSS for LOGO block  And Name block------------------------------------------------*/
-
-
-
-/*------------------------------FOR LOGO--------------------*/
-.logo{
-  width:100px;
-  height:100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color:white;
-  background:radial-gradient(circle, #9f0909, #271212);
-  margin-top:40%;
-  margin-left: 10%;
-}
-.logo img{
-  transform: rotate(45deg);
-  margin-left: 0%;
-  margin-top:0%;
-  height:75px;
-  width: 75px;
-}
-
-
-
-
-/*-------------------------------------FOR NAME*/
-
-.name{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color:white;
-  height: 200px;
-  width: 200px;
-  color: blanchedalmond;
-  background:radial-gradient(circle, #9f0909, #271212);;;
-  
-}
-.name h1{
+.menuRight {
   position: relative;
-  transform: rotate(45deg);
-  font-size: 30px;
+  width: 40px;
+  margin-right: 40px;
+  background-color: black;
+  height: 30px;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.burgerLines {
+  float: none;
+  border: 2px solid red;
+  margin-right: 20px;
+  width: 40px;
+  height: 10px;
 }
 
+.contents {
+  background: radial-gradient(circle, #9f0909, #271212);
+  width: 60%;
+  float: left;
+  height: 700px;
+  position: relative;
+  margin-top: 2.5%;
+  margin-left: 35%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
-.Pages1{
-  display:flex;
-  flex-direction: row;
-  height:100px;
-  margin-top:2%;
-  margin-left:-6%;
+.currentPage {
+  width: 150px;
+  float: left;
+  left: -30%;
+  top: 30%;
+  position: absolute;
+  height: 0;
+  border-top: 300px solid #666;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
   transform: rotate(90deg);
 }
-
-
-.gtk{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:100px;
-  height:100px;
-  margin-top:55%;
-  color:white;
-  background:radial-gradient(circle, #9f0909, #271212);
-}
-
-.gtk span{
+.contents {
   position: relative;
-  transform: rotate(-45deg);
-  font-size: 20px;
+  top: 10%;
 }
-
-
-
-.events{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:100px;
-  height:100px;
-  margin-top:55%;
-  color:white;
-  background:radial-gradient(circle, #9f0909, #271212);
-}
-
-.events span{
-  position: relative;
-  transform: rotate(-45deg);
-  font-size: 20px;
-}
-
-
-
-
-.members{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:100px;
-  height:100px;
-  margin-top:55%;
-  color:white;
-  background:radial-gradient(circle, #9f0909, #271212);
-}
-
-.members span{
-  position: relative;
-  transform: rotate(-45deg);
-  font-size: 20px;
-}
-
-.pages2{
-  display:flex;
-  flex-direction: row;
-  margin-left:-71%;
-  margin-top:-14%;
-  transform: rotate(90deg);
-}
-
-.gallery{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:100px;
-  height:100px;
-  margin-top: 55%;
-  color:white;
-  background:radial-gradient(circle, #9f0909, #271212);
-}
-
-.gallery span{
-  display:flex;
-  flex-direction: row;
-  transform: rotate(-45deg);
-}
-
-.contact{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width:100px;
-  height:100px;
-  margin-top:55%;
-  color:white;
-  background:radial-gradient(circle, #9f0909, #271212);
-}
-
-.contact span{
-  display:flex;
-  flex-direction: row;
-  transform: rotate(-45deg);
-}
-
