@@ -5,7 +5,7 @@ import Container from "./Container";
 export default function NavBar() {
   return (
     <div className="navBar">
-      <div className="menuRight">
+      {/* <div className="menuRight">
         <div className="burgerLines"></div>
         <div className="burgerLines"></div>
         <div className="burgerLines"></div>
@@ -20,7 +20,7 @@ export default function NavBar() {
           <li>Contact US</li>
         </ul>
       </div>
-      <Container />
+      <Container /> */}
     </div>
   );
 }
