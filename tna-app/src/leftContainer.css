@@ -26,88 +26,82 @@ h2 {
 
 .tna_gridLinks {
   width: 100%;
-  background-color: #ffff;
-  position: relative;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 
 .logo {
-  height: 140px;
-  width: 140px;
+  height: 9vmax;
+  width: 9vmax;
   background: radial-gradient(circle, #9f0909, #271212);
   position: absolute;
-  top: 2rem;
-  left: 4rem;
+  top: 4vmax;
   transform: rotate(45deg);
-  margin-left: 5rem;
+  left: 5.3vmax;
 }
 
 .homeName {
-  height: 270px;
-  width: 270px;
-  top: 4rem;
-  left: 6rem;
+  height: 15vmax;
+  width: 15vmax;
   background: radial-gradient(circle, #9f0909, #271212);
   position: absolute;
-  margin-top: 3rem;
+  margin-top: 9.6vmax;
+  margin-left:10.6vmax;
   transform: rotate(45deg);
-  margin-left: 9.7rem;
-  text-align: center;
+ 
 }
 
-.goodToknow {
-  height: 140px;
-  width: 140px;
+ .goodToknow {
+  height: 7.5vmax;
+  width: 7.5vmax;
   background: radial-gradient(circle, #9f0909, #271212);
   position: absolute;
-  top: 17rem;
+  top: 19vmax;
   transform: rotate(45deg);
-  left: 2rem;
-  margin-left: 4.7rem;
+  left: 3vmax;
+  
 }
 
 .events {
-  height: 140px;
-  width: 140px;
+  height: 7.5vmax;
+  width: 7.5vmax;
   position: absolute;
   background: radial-gradient(circle, #9f0909, #271212);
-  top: 23rem;
+  top: 24.30vmax;
   transform: rotate(45deg);
-  left: 7rem;
-  margin-left: 5.7rem;
+  left: 8.30vmax;
+  
 }
 
 .gallery {
-  height: 140px;
-  width: 140px;
+  height: 7.5vmax;
+  width: 7.5vmax;
   background: radial-gradient(circle, #9f0909, #271212);
   position: absolute;
-  top: 29rem;
-  left: 1.9rem;
+  top: 29.6vmax;
   transform: rotate(45deg);
-  margin-left: 4.9rem;
+  left: 3vmax;
+  
 }
 
 .contactUs {
-  height: 140px;
-  width: 140px;
-  background: radial-gradient(circle, #9f0909, #271212);
+  height: 7.5vmax;
+  width: 7.5vmax;
   position: absolute;
-  top: 35.2rem;
-  left: 7rem;
+  background: radial-gradient(circle, #9f0909, #271212);
+  top: 34.9vmax;
   transform: rotate(45deg);
-  margin-left: 6rem;
+  left: 8.30vmax;
 }
 
 .members {
-  height: 160px;
-  width: 160px;
+  height: 11vmax;
+  width: 11vmax;
   background: radial-gradient(circle, #9f0909, #271212);
   position: absolute;
-  top: 28.3rem;
-  left: 7.5rem;
+  top: 27.8vmax;
+  left: 15vmax;
   transform: rotate(45deg);
-  margin-left: 12.3rem;
-}
+  
+} 
