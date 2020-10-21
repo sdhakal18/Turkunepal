@@ -14,8 +14,11 @@ code {
 
 .App {
   display: grid;
+  grid-template-columns: 20vw 20vw 30vw 30vw;
+  grid-template-rows: 50px 90% auto;
 }
-
+/* 
 .hamburgerMenu {
   float: right;
 }
+ */
