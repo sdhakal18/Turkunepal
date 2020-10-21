@@ -9,7 +9,7 @@ import "./leftContainer.css";
 
 export default function LeftContainer() {
   return (
-    <div className="mainleft">
+    
     <div className="LeftContainer">
       <div class="tna_gridLinks">
         <div class="logo">
@@ -36,6 +36,6 @@ export default function LeftContainer() {
         </div>
       </div>
     </div>
-    </div>
+  
   );
 }
