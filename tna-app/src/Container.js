@@ -3,8 +3,7 @@ import "./container.css";
 
 export default function Container() {
   return (
-    <div className="contents">
-      <div class="arrow-left"></div>
+    <div className="container">
       <div class="wrapper">
   <div >
   <div class="rtgtk">
